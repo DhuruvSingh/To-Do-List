@@ -3,4 +3,4 @@ import './style.css';
 
 import {camelCase} from 'lodash';
 
-console.log(camelCase('Hello World'))
+console.log(camelCase('Hello World')) 
