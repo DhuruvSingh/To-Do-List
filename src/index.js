@@ -1,3 +1,5 @@
+// import _ from 'lodash';
+// import { add } from 'lodash';
 import './style.css';
 import Crud from './add&delete.js';
 // eslint-disable-next-line
@@ -5,10 +7,10 @@ import Modal from './popupOption.js';
 
 export default function displayList(input) {
   document.getElementById('ul-container-list').innerHTML = input.map((items, index) => `
-    <li id="${index}"><input id="listElement${index}" type="checkbox"> 
-    <input id='input${index}' value="${items.description}" type="text" disabled="disabled" class='input-list'> 
-    <i id="iconDots${index}" class="fas fa-ellipsis-v"></i></li>
-    `).join('');
+  <li id="${index}"><input id="listElement${index}" type="checkbox"> 
+  <input id='input${index}' value="${items.description}" type="text" disabled="disabled" class='input-list'> 
+  <i id="iconDots${index}" class="fas fa-ellipsis-v"></i></li>
+  `).join('');
 }
 
 displayList(Crud.add());
