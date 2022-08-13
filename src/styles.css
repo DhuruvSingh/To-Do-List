@@ -36,7 +36,6 @@ body {
   max-width: 500px;
   max-height: 80vh;
   grid-auto-rows: auto;
-
   cursor: pointer;
 }
 
@@ -89,6 +88,7 @@ body {
   padding: 5px;
   margin: 0;
 }
+
 ::placeholder {
   border: none;
   font-style: oblique;
