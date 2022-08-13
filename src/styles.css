@@ -72,7 +72,7 @@ body {
   border-bottom: var(--border-bottom-list);
 }
 
-#input-list {
+.input-list {
   border: none;
   background-color: transparent;
   width: var(--width-table-content);
@@ -81,6 +81,14 @@ body {
   margin: 0;
 }
 
+#input-list {
+  border: none;
+  background-color: transparent;
+  width: var(--width-table-content);
+  outline: none;
+  padding: 5px;
+  margin: 0;
+}
 ::placeholder {
   border: none;
   font-style: oblique;
