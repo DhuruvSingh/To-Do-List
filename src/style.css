@@ -8,6 +8,10 @@ i {
   opacity: 50%;
 }
 
+i:hover {
+  color: rgb(0, 0, 0);
+}
+
 :root {
   --width-table-content: 100%;
   --padding-table-content: 10px;
@@ -15,92 +19,112 @@ i {
 }
 
 body {
+  /* width: 100vw; */
+  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   background-color: rgba(192, 189, 189, 0.381);
-  color: gray;
-}
-
-#container-list {
-  box-shadow: 0 0 20px;
   background-color: white;
   width: 80%;
   margin: 0 auto;
-  margin-top: 25vh;
+  margin-top: 5vw;
   max-width: 500px;
+  max-height: 80vh;
   grid-auto-rows: auto;
   cursor: pointer;
 }
 
-#toDoList-title {
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  padding: var(--padding-table-content);
-  border-bottom: var(--border-bottom-list);
-}
-
-#div-container-inputList {
-  display: flex;
-  position: relative;
-}
-
-#icon-input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  bottom: 50%;
-  cursor: text;
-}
-
-#input-list {
+.input-list-Main {
   width: var(--width-table-content);
   padding: var(--padding-table-content);
   border: none;
   outline: none;
   border-bottom: var(--border-bottom-list);
+}
+
+.input-list {
+  border: none;
+  background-color: transparent;
+  width: var(--width-table-content);
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 ::placeholder {
   border: none;
   font-style: oblique;
-  opacity: 50%;
-  outline: none;
 }
 
 #ul-container-list {
   list-style: none;
+  overflow-y: scroll;
+  max-height: 60vh;
 }
 
-#ul-container-list li {
-  list-style: none;
+.delet-Container-eachelement {
+  background-color: rgba(32, 29, 126, 0.084);
+  backdrop-filter: blur(0.2rem);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.delet-btn-eachElement {
   display: flex;
-  gap: 10px;
-  padding: var(--padding-table-content);
-  border-bottom: var(--border-bottom-list);
-}
-
-#ul-container-list li i {
-  margin-left: auto;
-}
-
-#clearbtn-list {
+  margin: 300px auto;
   border: none;
-  width: var(--width-table-content);
-  padding: var(--padding-table-content);
-  color: rgba(128, 128, 128, 0.622);
+  background-color: rgb(247, 70, 70);
+  color: white;
+  border-radius: 20%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px black;
   cursor: pointer;
 }
 
-.testing-btn {
-  display: flex;
-  justify-content: center;
-  color: red;
+.delet-x-icon {
+  right: 0;
+  position: absolute;
+  margin: 130px auto;
+  text-align: right;
+  margin-right: 20%;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
 }
 
-.text-crossLine {
-  text-decoration: line-through !important;
+.delet-x-icon:hover {
+  color: greenyellow;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.delet-message-modal {
+  color: black;
+  margin: 180px auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(243, 9, 9, 0.826);
+}
+
+.delet-btn-eachElement:hover {
+  transform: scale(1.1);
+}
+
+.display-none {
+  display: none;
+}
+
+.updating-list-message {
+  font-style: italic;
+  opacity: 50%;
+  margin-left: auto;
+  margin-right: 2%;
 }

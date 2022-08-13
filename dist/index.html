@@ -1,15 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Document</title>
-    <script src="../dist/main.js"></script>
-    <script defer="defer" src="main.js"></script>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"/>
+<script defer src="main.js"></script></head>
+<body>
+    <div id="container-list">
 
-<body></body>
+        <h1 id="toDoList-title"><span id="title-text-list">Today's To Do</span>
+            <span id="updating-list-message" class="display-none updating-list-message">Updating...</span>
+            <i id='refresh-list' class="fas fa-sync refresh-list"></i></h1> 
+        <div id="div-container-inputList">
+            <input placeholder="Add to your list... " id="input-list" type="text">
+            <i id="icon-input" class="fas fa-hand-point-left"></i>
+        </div>
+        <ul id="ul-container-list"></ul>
 
+        <button type="submit" id="clearbtn-list">Clear all completed</button>
+
+    </div>
+    <section id="delet-Container-eachelement" class="delet-Container-eachelement display-none">
+        <i id="delet-x-icon" class="fas fa-times delet-x-icon"></i>
+        <p id="delet-message-modal" class="delet-message-modal"></p>
+        <button id="delet-btn-eachElement" class="delet-btn-eachElement">Delete</button>
+    </section>
+</body>
 </html>
