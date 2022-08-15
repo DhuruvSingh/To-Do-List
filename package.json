@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode=development",
     "dev": "webpack --mode development",
     "start": "webpack serve"
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/DhuruvSingh/To-Do-List/issues"
   },
-  "homepage": "https://github.com/DhuruvSingh/To-Do-List#readme",
+  "homepage": "https://dhuruvsingh.github.io/To-Do-List/",
   "dependencies": {
     "lodash": "^4.17.21"
   },
@@ -29,6 +29,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",

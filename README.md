@@ -19,7 +19,7 @@ In this project, you will restructure your Awesome books app code. The goal is t
 
 ## Live Demo
 
-[Live Demo Link](Available Soon)
+[Live Demo Link](https://dhuruvsingh.github.io/To-Do-List/)
 
 
 ## Getting Started
